@@ -2,7 +2,7 @@ version: '3'
 services:
   backend:
 
-    build: back_end/
+    build: backend/
     image: python:3.8-alpine
     container_name: fastapi-backend
     volumes:
@@ -22,7 +22,7 @@ services:
     command: echo "SQLite database volume"
 
   frontend:
-    build: front_end/
+    build: frontend/
     image: nginx:latest
     container_name: frontend
     volumes:
